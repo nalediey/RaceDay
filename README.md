@@ -144,9 +144,9 @@ This table links Participants to Events and Categories.
 -workflows/
 
 ## MY INFORMATION 
-Names: Naledi Charity
-Surname: Mokoena
-St Number: ST10488132
+-Names: Naledi Charity
+-Surname: Mokoena
+-St Number: ST10488132
 
 
 
