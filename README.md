@@ -58,7 +58,7 @@ For this project, I used the following technologies:
 
 ## My Database: RaceDayDB
 
-I created a database called **RaceDayDB** for managing athletic events. The database contains 5 tables that work together to store all the necessary information.
+I created a database called **RaceDayDB** for managing Race Day events. The database contains 5 tables that work together to store all the necessary information.
 
 
 ## The 5 Tables I Created
@@ -70,7 +70,7 @@ This table stores information about all users of the system.
 - UserID - A unique number for each user (Primary Key)
 - FirstName - User's first name
 - LastName - User's last name
-- Email - User's email address (must be unique)
+- Email - User's email address (it must be unique)
 - Password - User's password
 - Role - Whether the user is an Organiser or Participant
 
@@ -99,11 +99,11 @@ This table stores different categories for each event.
 **What it stores:**
 - CategoryID - A unique number for each category (Primary Key)
 - EventID - The event this category belongs to (Foreign Key to Event table)
-- Name - Category name (e.g., Junior 5km, Senior 10km)
+- Name - Category name (example Kids 5km, Adults 10km)
 - Distance - The distance for this category
 - EntryFee - How much it costs to enter
 
-**Why I created it:** Events can have multiple categories with different distances and fees. This allows flexibility for different age groups or skill levels.
+**Why I created it:** Events can have multiple categories with different distances and fees. This allows for different age groups or skill levels.
 
 ---
 
