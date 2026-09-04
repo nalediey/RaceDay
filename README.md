@@ -18,10 +18,10 @@ I created 6 tables for this system:
  Table: What It Stores.
 
 User - User information (name, email, password, role).
-Event - Event details (name, description, date, location)
-Category - Age/distance categories for events 
-Route - Route information for events 
-Enrolment - Links participants to events with finish times and positions
+Event - Event details (name, description, date, location).
+Category - Age/distance categories for events.
+Route - Route information for events. 
+Enrolment - Links participants to events with finish times and positions.
 Results - Shows which position the participant came out.
 
 ### ERD Diagram
