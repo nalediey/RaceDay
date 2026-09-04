@@ -44,13 +44,12 @@ Results - Shows which position the participant came out.
 
 ## Technologies Used
 
-For this project, I used the following technologies:
+For my API project, I used the following technologies:
 
 | Technology | Purpose |
 |------------|---------|
 | **SQL Server** | Database management system |
 | **SQL** | Writing queries and creating tables |
-| **REST API** | Backend service architecture |
 | **GitHub** | Version control and repository hosting |
 | **GitHub Actions** | CI/CD automation for validation |
 
