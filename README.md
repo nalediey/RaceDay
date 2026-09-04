@@ -57,10 +57,10 @@ For my API project, I used the following technologies:
 
 ## My Database: RaceDayDB
 
-I created a database called **RaceDayDB** for managing Race Day events. The database contains 5 tables that work together to store all the necessary information.
+I created a database called **RaceDayDB** for managing Race Day events. The database contains 6 tables that work together to store all the necessary information needed for the race day.
 
 
-## The 5 Tables I Created
+## The 6 Tables I Created
 
 ### 1. User Table
 This table stores information about all users of the system.
