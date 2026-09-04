@@ -147,6 +147,7 @@ This table links Participants to Events and Categories.
 -Names: Naledi Charity
 -Surname: Mokoena
 -St Number: ST10488132
+-Email: ST10488132@rcconnect.edu.za
 
 
 
