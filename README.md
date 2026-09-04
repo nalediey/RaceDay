@@ -150,6 +150,10 @@ This table links Participants to Events and Categories.
 -St Number: ST10488132
 -Email: ST10488132@rcconnect.edu.za
 
+## CI/CD workflow
+<img width="669" height="38" alt="image" src="https://github.com/user-attachments/assets/3a1b05db-4870-41a9-b418-83a8b0c5a45c" />
+
+
 
 
 
