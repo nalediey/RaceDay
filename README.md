@@ -133,6 +133,18 @@ This table links Participants to Events and Categories.
 **Why I created it:** This is the most important table because it shows who is participating in which event and category. It also stores results.
 
 
+## Project Structure
+RaceDayDB/
+-docs/
+-ERD_Diagram.png # Entity Relationship Diagram
+-Database_Script.sql # SQL script for database creation
+-API_Endpoints.md # API endpoint documentation
+-README.md # This file
+-.github/
+-workflows/
+
+
+
 
 
 
