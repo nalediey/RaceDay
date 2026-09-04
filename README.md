@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a RESTful API I developed for managing athletic events. The system allows Organisers to create and manage events, while Participants can register, enrol in events, and view their race results.
+This is my RESTful API plan that I developed for managing athletic events. The system allows Organisers to create and manage events, while Participants can register, enrol in events, and view their race results.
 
 ## User Roles
 
