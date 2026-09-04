@@ -143,6 +143,11 @@ This table links Participants to Events and Categories.
 -.github/
 -workflows/
 
+## MY INFORMATION 
+Names: Naledi Charity
+Surname: Mokoena
+St Number: ST10488132
+
 
 
 
