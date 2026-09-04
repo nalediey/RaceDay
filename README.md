@@ -1,5 +1,4 @@
 # RaceDay
-# RaceDayDB - Event Management System
 
 ## Project Overview
 
@@ -54,6 +53,86 @@ For this project, I used the following technologies:
 | **REST API** | Backend service architecture |
 | **GitHub** | Version control and repository hosting |
 | **GitHub Actions** | CI/CD automation for validation |
+
+# SQL DATABASE EXPLANATION
+
+## My Database: RaceDayDB
+
+I created a database called **RaceDayDB** for managing athletic events. The database contains 5 tables that work together to store all the necessary information.
+
+
+## The 5 Tables I Created
+
+### 1. User Table
+This table stores information about all users of the system.
+
+**What it stores:**
+- UserID - A unique number for each user (Primary Key)
+- FirstName - User's first name
+- LastName - User's last name
+- Email - User's email address (must be unique)
+- Password - User's password
+- Role - Whether the user is an Organiser or Participant
+
+**Why I created it:** I need to know who is using the system and what their role is. Organisers will have different permissions than Participants.
+
+---
+
+### 2. Event Table
+This table stores information about all events.
+
+**What it stores:**
+- EventID - A unique number for each event (Primary Key)
+- OrganiserID - The ID of the user who created the event (Foreign Key to User table)
+- Name - Event name
+- Description - Event description
+- Date - When the event takes place
+- Location - Where the event is held
+
+**Why I created it:** Organisers need to create events and Participants need to view and join them. Each event must be linked to its organiser.
+
+---
+
+### 3. Category Table
+This table stores different categories for each event.
+
+**What it stores:**
+- CategoryID - A unique number for each category (Primary Key)
+- EventID - The event this category belongs to (Foreign Key to Event table)
+- Name - Category name (e.g., Junior 5km, Senior 10km)
+- Distance - The distance for this category
+- EntryFee - How much it costs to enter
+
+**Why I created it:** Events can have multiple categories with different distances and fees. This allows flexibility for different age groups or skill levels.
+
+---
+
+### 4. Route Table
+This table stores route information for events.
+
+**What it stores:**
+- RouteID - A unique number for each route (Primary Key)
+- EventID - The event this route belongs to (Foreign Key to Event table)
+- Distance - The total distance of the route
+- Description - Route description
+
+**Why I created it:** Each event needs a route. Storing route information separately keeps the Event table clean.
+
+---
+
+### 5. Enrolment Table
+This table links Participants to Events and Categories.
+
+**What it stores:**
+- EnrolmentID - A unique number for each enrolment (Primary Key)
+- UserID - The participant (Foreign Key to User table)
+- EventID - The event (Foreign Key to Event table)
+- CategoryID - The category (Foreign Key to Category table)
+- FinishTime - The participant's finish time
+- Position - The participant's finishing position
+
+**Why I created it:** This is the most important table because it shows who is participating in which event and category. It also stores results.
+
 
 
 
