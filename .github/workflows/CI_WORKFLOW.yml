@@ -1,0 +1,81 @@
+name: CI/CD Workflow - Validate Repository
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate-repository:
+    runs-on: ubuntu-latest
+    
+    steps:
+      
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      
+    
+      - name: Check docs folder exists
+        run: |
+          if [ -d "docs" ]; then
+            echo "docs folder exists"
+          else
+            echo "docs folder does not exist"
+            exit 1
+          fi
+      
+      
+      - name: Check docs folder has files
+        run: |
+          if [ "$(ls -A docs 2>/dev/null)" ]; then
+            echo "docs folder has files"
+          else
+            echo " docs folder is empty"
+            exit 1
+          fi
+      
+      
+      - name: List docs folder contents
+        run: |
+          echo "Files in docs folder:"
+          ls -la docs/
+      
+      
+      - name: Check SQL script exists
+        run: |
+          if find docs/ -name "*.sql" 2>/dev/null | grep -q .; then
+            echo " SQL script found"
+            find docs/ -name "*.sql" -type f
+          else
+            echo " No SQL script found in docs folder"
+            exit 1
+          fi
+      
+      
+      - name: Check ERD diagram exists
+        run: |
+          if find docs/ -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" 2>/dev/null | grep -q .; then
+            echo " ERD diagram found"
+            find docs/ -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -type f
+          else
+            echo " No ERD diagram found (PNG or JPG) - optional"
+          fi
+      
+      - name: Check documentation exists
+        run: |
+          if find docs/ -name "*.md" -o -name "*.docx" -o -name "*.pdf" 2>/dev/null | grep -q .; then
+            echo " Documentation found"
+            find docs/ -name "*.md" -o -name "*.docx" -o -name "*.pdf" -type f
+          else
+            echo " No documentation found (MD, DOCX, PDF) - optional"
+          fi
+      
+     
+      - name: Count files in docs
+        run: |
+          FILE_COUNT=$(find docs/ -type f 2>/dev/null | wc -l)
+          echo " Total files in docs: $FILE_COUNT"
+      
+      
+      
