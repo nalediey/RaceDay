@@ -26,6 +26,7 @@ Results - Shows which position the participant came out.
 
 ### ERD Diagram
 <img width="492" height="852" alt="ERD PROOG RACEDAY drawio" src="https://github.com/user-attachments/assets/874a38a6-198b-4816-a72d-77f109bf038f" />
+-This ERD shows the entities that work together.
 
 
 ## API Endpoints
