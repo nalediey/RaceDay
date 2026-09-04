@@ -134,7 +134,7 @@ This table links Participants to Events and Categories.
 
 
 ## Project Structure
-RaceDayDB/
+--RaceDayDB/
 -docs/
 -ERD_Diagram.png # Entity Relationship Diagram
 -Database_Script.sql # SQL script for database creation
